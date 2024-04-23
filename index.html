@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning API</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Player Information</h1>
-        <input type="text" id="playerInput" placeholder="Enter player name (e.g., Wayne Rooney)">
-        <button onclick="searchPlayer()">Search Player</button>
-        <div id="playerDetails"></div>
+        <div class="search-container">
+            <input type="text" class="playerInput" placeholder="Enter player name (e.g., Wayne Rooney)">
+            <input type="text" class="playerInput" placeholder="Enter another player name">
+            <button onclick="searchPlayers()">Search Players</button>
+        </div>
+        <div class="playersDetailsContainer">
+            <div id="playerDetails1" class="playerDetails"></div>
+            <div id="playerDetails2" class="playerDetails"></div>
+        </div>
+        <div id="weightComparison" class="weightComparisonContainer"></div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>

@@ -9,11 +9,16 @@ body {
 
 .container {
     text-align: center;
+    padding-top: 20px;
 }
 
-input {
+.search-container {
+    margin-bottom: 20px;
+}
+
+.playerInput {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 button {
@@ -26,4 +31,51 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.playersDetailsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.playerDetails {
+    flex: 1;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weightComparisonContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weightComparisonItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.weightLabel {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.progressBarContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.5s ease-in-out;
 }
